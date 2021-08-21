@@ -1,0 +1,16 @@
+import { IDepA } from "./idepa";
+import { injectable } from "inversify";
+
+// @injectable()
+// export class ConcreteA implements IDepA{
+//     doA(): void{
+//         console.log("Doing A");
+//     }
+// }
+@injectable()
+export class ConcreteA implements IDepA{
+    doA(): void {
+        console.log("Doing A");
+    }
+    
+}

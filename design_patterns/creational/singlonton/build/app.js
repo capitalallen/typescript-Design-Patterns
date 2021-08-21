@@ -1,0 +1,16 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var stats_tracker_1 = require("./stats-tracker");
+var test_1 = require("./test");
+var t = stats_tracker_1.StatsTracker.instance;
+t.buttonClicks = 10;
+t.facebookShares = 20;
+t.twitterShares = 30;
+t.widgetViews = 40;
+console.log(t.buttonClicks);
+console.log(t.facebookShares);
+console.log(t.twitterShares);
+console.log(t.widgetViews);
+t.widgetViews++;
+t.twitterShares += 2;
+test_1.test();
